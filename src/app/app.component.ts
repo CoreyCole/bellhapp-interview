@@ -4,7 +4,6 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
-
 @Component({
   templateUrl: 'app.html'
 })
@@ -17,6 +16,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
       Splashscreen.hide();
+      console.dir
     });
   }
 }
