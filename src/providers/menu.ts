@@ -1,2816 +1,2041 @@
 import { Injectable } from '@angular/core';
 
 let menu = {
-  "menus": [
+  "name": "Lunch",
+  "start": "11:30:00",
+  "end": "16:00:00",
+  "isAvailable": 1,
+  "sections": [
     {
-      "name": "Main",
-      "isAvailable": 1,
-      "sections": [
-        "Appetizers",
-        "Soup & Salad",
-        "Freshly Baked Tandoori Breads",
-        "Mediterranean Cuisine",
-        "Side Orders",
-        "Vegetarian Specialties",
-        "Tandoori Cuisine",
-        "Indian Cuisine",
-        "Desserts",
-        "Drinks",
-        "White Wines (by the bottle)",
-        "Red Wines (by the bottle)",
-        "House Wines (by the glass)"
+      "name": "Lunch Deals!",
+      "items": [
+        {
+          "name": "Soup, Salad & Focaccia Bread",
+          "description": "Featuring a bowl of homemade Minestrone or Soup of the Day, a Caesar or House Salad and our fresh baked Focaccia Bread, served with dipping oil.",
+          "price": 799,
+          "section": "Lunch Deals!",
+          "menu": "Lunch",
+          "option_groups": {},
+          "images": [
+            "5e36d9aa-101b-11e7-8b29-28cfe91e4031"
+          ],
+          "uid": "029b8ce1-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Mamma's Mac and Cheese",
+          "description": "Squiggly pasta, smoked prosciutto and a blend of zesty cheeses topped with crispy Italian breadcrumbs. Baked to perfection! Served with your choice of salad or homemade soup.",
+          "images": [
+            "4a08e81f-bf40-4feb-88ea-06dec9eaa854",
+            "5300cb77-866f-462e-b0cf-47b8c13a2e9b",
+            "22816a77-7362-4499-a636-e3f6f89dbcae"
+          ],
+          "price": 999,
+          "section": "Lunch Deals!",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8ce2-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Pasta Special!",
+          "description": "Choose Fetuccine Alfredo with our creamy Garlic Parmesan Cheese Sauce or Spaghetti with homemade Marinara Sauce. Topped with Parmesan cheese. Both served with choice of salad or homemade soup.",
+          "price": 1099,
+          "section": "Lunch Deals!",
+          "menu": "Lunch",
+          "option_groups": {
+            "Pasta & Sauce": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Fettuccine and Creamy Garlic Parmesan Cheese Sauce",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "Spaghetti and Homemade Marinara Sauce",
+                  "values": 0,
+                  "value": null,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ],
+              "OPTION_COUNT": [
+                {
+                  "name": "Tuscano's Homemade Meatballs",
+                  "value": 150,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Side": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "House Salad",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "Homemade Soup",
+                  "value": 0,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "d9d05a26-1009-11e7-8066-28cfe91e4031"
+          ],
+          "uid": "029b8ce4-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Tuscano's Pizza Special",
+          "description": "A personal size cheese pizza served with soup or salad.",
+          "price": 1099,
+          "section": "Lunch Deals!",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Pepperoni",
+                  "value": 100,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sausage",
+                  "value": 100,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Side": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "House Salad",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "Homemade Soup",
+                  "value": 0,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "9100487a-101c-11e7-a4ca-28cfe91e4031"
+          ],
+          "uid": "029b8ce5-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Cheese Ravioli",
+          "description": "Ravioli filled with Mozzarella cheese topped with your choice of Marinara or Alfredo Sauce. Served with your choice of salad or homemade soup.",
+          "price": 1149,
+          "section": "Lunch Deals!",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sauce": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Alfredo",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "Marinara",
+                  "value": 0,
+                  "is_default": 0
+                }
+              ],
+              "OPTION_ADD": [
+                {
+                  "name": "Pesto",
+                  "value": 100,
+                  "is_default": 0
+                },
+                {
+                  "name": "Bolognese",
+                  "value": 100,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Side": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "House Salad",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "Homemade Soup",
+                  "value": 0,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "987d5592-1004-11e7-bcaf-28cfe91e4031"
+          ],
+          "uid": "029b8ce6-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Eight Layer Lasagna",
+          "description": "A lunch-size portion of our hearty handmade Lasagna with 8 layers of pasta, meat sauce, Ricotta Mozzarella, Provolone and Parmesan cheeses with spicy Italian sausage in the center. Served with your choice of salad or homemade soup.",
+          "images": [
+            "a1812ae6-bc96-4cd1-b86c-46ef757b636d"
+          ],
+          "price": 1299,
+          "section": "Lunch Deals!",
+          "menu": "Lunch",
+          "option_groups": {
+            "Side": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "House Salad",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "Homemade Soup",
+                  "value": 0,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8ce7-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        }
+      ]
+    },
+    {
+      "name": "Burgers & Sandwiches",
+      "items": [
+        {
+          "name": "Bacon Cheeseburger",
+          "description": "Charbroiled half-pound burger topped with Tillamook Cheddar cheese and 2 strips of thick cut bacon.",
+          "price": 1449,
+          "section": "Burgers & Sandwiches",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Sidewinder Fries",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "House Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Caesar Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup",
+                  "value": 199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "b7df2f44-1001-11e7-b01e-28cfe91e4031"
+          ],
+          "uid": "029b8ce9-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Portobello Mushroom Burger",
+          "description": "Charbroiled half-pound burger topped with Mozzarella, marinated Portobello mushrooms and roasted garlic.",
+          "price": 1499,
+          "section": "Burgers & Sandwiches",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Sidewinder Fries",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "House Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Caesar Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup",
+                  "value": 199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "8e997dd6-1017-11e7-bdbb-28cfe91e4031"
+          ],
+          "uid": "029b8cea-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Gorgonzola Burger",
+          "description": "Charbroiled half-pound burger topped with grilled sweet onions, Gorgonzola cheese and crispy prosciutto.",
+          "price": 1449,
+          "section": "Burgers & Sandwiches",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Sidewinder Fries",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "House Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Caesar Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup",
+                  "value": 199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "760211e4-1007-11e7-a6d0-28cfe91e4031"
+          ],
+          "uid": "029b8ceb-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Prime Rib Dip",
+          "description": "Delicious slow roasted prime rib layerd on a toasted baguette, then smothered with melted Mozzarella. Served with rich, house made au jus on the side.",
+          "images": [
+            "f347b975-49f8-49fc-96e3-d97f5dd0c062"
+          ],
+          "price": 1549,
+          "section": "Burgers & Sandwiches",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Sidewinder Fries",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "House Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Caesar Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup",
+                  "value": 199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8cec-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Chicken Parmesan",
+          "description": "Lightly breaded chicken breast, topped with our homemade Marinara Sauce and Mozzarella cheese. Baked in our brick oven. Topped with fresh basil.",
+          "price": 1399,
+          "section": "Burgers & Sandwiches",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Sidewinder Fries",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "House Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Caesar Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup",
+                  "value": 199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8ced-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Italian Club",
+          "description": "Smoked prosciutto, Mozzarella cheese, grilled chicken breast, oven baked then topped with garlic mayo, oil & vinegar, red onion, tomatoes and lettuce.",
+          "price": 1449,
+          "section": "Burgers & Sandwiches",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Sidewinder Fries",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "House Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Caesar Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup",
+                  "value": 199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "2826d0bc-1008-11e7-ba6a-28cfe91e4031"
+          ],
+          "uid": "029b8cee-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Meatball Sandwich",
+          "description": "Fresh baguette slathered with garlic butter, then stuffed with meatballes, Marinara Sauce and Mozzarella cheese. Baked in our brick oven. Topped with fresh basil.",
+          "price": 1399,
+          "section": "Burgers & Sandwiches",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Sidewinder Fries",
+                  "value": 0,
+                  "is_default": 1
+                },
+                {
+                  "name": "House Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Caesar Salad",
+                  "value": 199,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup",
+                  "value": 199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "31332f88-1009-11e7-8387-28cfe91e4031"
+          ],
+          "uid": "029b8cef-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        }
+      ]
+    },
+    {
+      "name": "Soups & Salads",
+      "items": [
+        {
+          "name": "Greek Salad",
+          "description": "Organic Kale, spinach and red & green chard tossed with Feta cheese, Kalamata olives, jicama, red peppers, grape tomatoes, red onions and cucumbers in our Honey Balsamic Garlic Dressing with a touch of red pepper flakes.",
+          "images": [
+            "031f4b7e-46cb-4548-a8bc-4965461bdd11",
+            "8687ae5f-0b0c-4a20-9e57-3147077c4567"
+          ],
+          "price": 0,
+          "section": "Soups & Salads",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sauteed Shrimp",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Crispy Fried Calamari",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Wild Alaskan Grilled Salmon Fillet",
+                  "value": 999,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Price": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Small",
+                  "value": 899,
+                  "is_default": 1
+                },
+                {
+                  "name": "Large",
+                  "value": 1199,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8cf0-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Italian Cobb",
+          "description": "Crisp Romaine lettuce, grilled chicken breast, artichoke hearts, grape tomatoes, crispy fried prosciutto, hard-boiled egg, black olives and Gorgonzola cheese. Served with our house-made Ranch dressing.",
+          "images": [
+            "3cb382f2-8bc0-4439-a225-2a39c38597d6",
+            "e8b315b2-7c6f-4ac9-94a1-5d65b3fe3862"
+          ],
+          "price": 0,
+          "section": "Soups & Salads",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sauteed Shrimp",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Crispy Fried Calamari",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Wild Alaskan Grilled Salmon Fillet",
+                  "value": 999,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Price": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Small",
+                  "value": 1099,
+                  "is_default": 1
+                },
+                {
+                  "name": "Large",
+                  "value": 1399,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8cf2-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Tuscano's Caesars!",
+          "description": "Crisp Romaine lettuce, Tuscano's delicious Caesars dressing, croutons and shredded Parmesan cheese.",
+          "images": [
+            "ed0cc041-72ef-4168-b4dd-d627f7474d68"
+          ],
+          "price": 0,
+          "section": "Soups & Salads",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sauteed Shrimp",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Crispy Fried Calamari",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Wild Alaskan Grilled Salmon Fillet",
+                  "value": 999,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Price": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Small",
+                  "value": 629,
+                  "is_default": 1
+                },
+                {
+                  "name": "Large",
+                  "value": 899,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8cf4-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Tuscano's Chopped Salad",
+          "description": "Crisp Romaine, Mozzarella, Genoa salami, prosciutto, garbanzo beans, tomatoes, black olives and red onions, all tossed in our Italian Vinaigrette.",
+          "images": [
+            "cd72d2a1-cae0-4d7e-a2af-9e1d6fb1c265"
+          ],
+          "price": 0,
+          "section": "Soups & Salads",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sauteed Shrimp",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Crispy Fried Calamari",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Wild Alaskan Grilled Salmon Fillet",
+                  "value": 999,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Price": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Small",
+                  "value": 949,
+                  "is_default": 1
+                },
+                {
+                  "name": "Large",
+                  "value": 1299,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8cf6-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Apple Walnut Insalata",
+          "description": "Field Greens with candied walnuts, dried cranberries and Gorgonzola cheese tossed with house-made Honey Dijon dressing. Topped with fresh sliced apples",
+          "images": [
+            "8f774795-c971-49ea-9e00-ae360d19cd4b"
+          ],
+          "price": 0,
+          "section": "Soups & Salads",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sauteed Shrimp",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Crispy Fried Calamari",
+                  "value": 499,
+                  "is_default": 0
+                },
+                {
+                  "name": "Wild Alaskan Grilled Salmon Fillet",
+                  "value": 999,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Price": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Small",
+                  "value": 899,
+                  "is_default": 1
+                },
+                {
+                  "name": "Large",
+                  "value": 1249,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8cf8-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Soup of the Day",
+          "description": "Enjoy a bowl of our homemade Soup of the Day. Ask your server for today's choice",
+          "images": [
+            "1f497392-101b-11e7-a5af-28cfe91e4031"
+          ],
+          "price": 649,
+          "section": "Soups & Salads",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8cfa-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Zuppa di Minestrone",
+          "description": "Made from scratch! Vegetable bean medley. Italian sausage, pepperoni, black olives and fresh Italian herbs in a savory tomato broth",
+          "images": [
+            "a341547c-fa74-409f-ab48-f4ed5b8d3a7b"
+          ],
+          "price": 649,
+          "section": "Soups & Salads",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8cfc-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        }
+      ]
+    },
+    {
+      "name": "Tuscano's Classics",
+      "items": [
+        {
+          "name": "Chicken Parmesan",
+          "description": "Tender chicken breast, lightly breaded and fried. Then topped with homemade Marinara Sauce and Mozzarella cheese. Served with a side of spaghetti.",
+          "price": 0,
+          "section": "Tuscano's Classics",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "House Salad",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Price": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Lunch Portion",
+                  "value": 1299,
+                  "is_default": 1
+                },
+                {
+                  "name": "Regular",
+                  "value": 1599,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "b0cde972-1004-11e7-9ead-28cfe91e4031"
+          ],
+          "uid": "029b8cfe-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Spicy Shrimp Putanesca",
+          "description": "Jumbo shrimp, Kalamata olives, capers, grape tomatoes, garlic and Parmesan cheese tossed with spaghetti, olive oil and crushed red peppers.",
+          "images": [
+            "e3f3e959-0a9f-4f12-ab85-47e5cc4aa102"
+          ],
+          "price": 0,
+          "section": "Tuscano's Classics",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "House Salad",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Price": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Lunch Portion",
+                  "value": 1399,
+                  "is_default": 1
+                },
+                {
+                  "name": "Regular",
+                  "value": 1699,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d02-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Salmon Picatta",
+          "description": "Grilled Wild Alaskan Salmon topped with our Lemon Butter Caper Sauce. Served with sauteed season vegetables and Garlic Parmesan Mashed Potatoes.",
+          "images": [
+            "0d580c7e-5b66-49ab-9e5a-f2611d582f1b",
+            "9a1ca3ef-2b02-45e9-9d50-ab1cdd05299d"
+          ],
+          "price": 1999,
+          "section": "Tuscano's Classics",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "House Salad",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d04-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Tuscano's Chicken Carbonara",
+          "description": "Grilled chicken, green peas, sundried tomatoes and mushrooms tossed with spaghetti noodles in our Prosciutto Cream Sauce.",
+          "images": [
+            "ba7d7d04-dbed-4305-a87c-a4fafa8c7b9f"
+          ],
+          "price": 1499,
+          "section": "Tuscano's Classics",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "House Salad",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d06-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Steak Marsala",
+          "description": "Tender Fillet Medallions lightly seasoned. Served on a bed of Garlic Parmesan mashed potatoes Topped with our delicious homemade Marsala Sauce with roasted garlic and portabella mushroomes.",
+          "images": [
+            "a631f2dc-2021-4a24-ab80-6d939c62de3e"
+          ],
+          "price": 1899,
+          "section": "Tuscano's Classics",
+          "menu": "Lunch",
+          "option_groups": {
+            "Substitute": {
+              "OPTION_CHOOSE": [
+                {
+                  "name": "Pan Seared Chicken",
+                  "value": 1699,
+                  "is_default": 1
+                },
+                {
+                  "name": "Pan Seared Chicken (Lunch Portion)",
+                  "value": 1399,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "House Salad",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d08-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Pollo Con Fresca",
+          "description": "Light and healthy! Grilled chicken breast served with Italian herb linguini topped with sundried tomatoes. Includes a side of Bruschetta and grilled asparagus.",
+          "images": [
+            "7ce6e6c5-1069-4ae6-9dec-1b78c00a3e84"
+          ],
+          "price": 1349,
+          "section": "Tuscano's Classics",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "House Salad",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d0a-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Cajun Chicken Pasta",
+          "description": "Blackened Chicken Breast served over Rigatoni pasta, tossed with Arrabiatta Sauce and sliced mushrooms in our spicy Cajun cream sauce. Topped with diced tomatoes, Parmesan cheese and fresh chopped basil. If you like Spicy, give it a try! It's delicious!",
+          "images": [
+            "6c1d9f0b-a1c2-44f7-ae18-cb6d123b48d5",
+            "22879099-d7a0-462d-bcab-5f992e033f51"
+          ],
+          "price": 1799,
+          "section": "Tuscano's Classics",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "House Salad",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 399,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d0c-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        }
+      ]
+    },
+    {
+      "name": "Brick Oven Pizzas",
+      "items": [
+        {
+          "name": "The Godfather",
+          "description": "Slow roasted Prime Rib, Gorgonzola cheese, caramelized onions drizzled with a balsamic reduction, all layered over our thin crust, lightly basted in garlic olive oil.",
+          "images": [
+            "75d38d46-f6f3-441c-9fd4-f1ab39df2559"
+          ],
+          "price": 1799,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d20-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Big Kahuna",
+          "description": "Tuscano's delicious scratch pizza crust topped with homemade pizza sauce, five cheese blend, thinly-sliced prosciutto and sweet Hawaiian pineapple. Aloha!",
+          "price": 1599,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "4a00b852-1002-11e7-80b7-28cfe91e4031"
+          ],
+          "uid": "029b8d22-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Meat Lovers' Pizza",
+          "description": "Loaded with spicy Arrabiatta sausage, salami, pepperoni, prosciutto and Mozzarella cheese.",
+          "images": [
+            "88592375-035b-4579-aa73-858ed9377ae2"
+          ],
+          "price": 1799,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d24-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "The Greek",
+          "description": "Thin crust brushed with olive oil and topped with roasted garlic, Kalamata olives, Feta and Provolone cheeses, roasted grape tomatoes and fresh spinach.",
+          "images": [
+            "0e679fa9-14b3-4364-9047-013339ffafaf"
+          ],
+          "price": 1599,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sauteed Shrimp",
+                  "value": 449,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d26-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Pepperoni",
+          "description": "The classic! Tomato sauce, pepperoni and Mozzarella.",
+          "images": [
+            "c508903e-235a-4b88-be91-cc2ea39bda7a"
+          ],
+          "price": 1499,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d28-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Arrabiatta",
+          "description": "Spicy Italian sausage, sliced mushrooms, pepperoni, red pepper flakes and a blend of four cheeses. A guest favorite!",
+          "images": [
+            "274cded0-eabf-47e5-9bc8-8f3a952f6239"
+          ],
+          "price": 1699,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d2a-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Garden Fresh Pizza",
+          "description": "Thin crust topped with our Pesto Sauce, artichoke hearts, sliced mushrooms, red onions, roasted red pepers, Roma tomatoes, pine nuts and Goat & Mozzarella cheeses. Topped with organic greens.",
+          "price": 1599,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Topping": {
+              "OPTION_ADD": [
+                {
+                  "name": "Grilled Chicken",
+                  "value": 399,
+                  "is_default": 0
+                },
+                {
+                  "name": "Sauteed Shrimp",
+                  "value": 449,
+                  "is_default": 0
+                }
+              ]
+            },
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "images": [
+            "3c96af32-1007-11e7-826f-28cfe91e4031"
+          ],
+          "uid": "029b8d2c-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Margherita",
+          "description": "Hand-made crust basted in virgin olive oil. Topped with fresh Mozzarella, vine-ripe sliced tomatoes and fresh chopped basil leaves.",
+          "images": [
+            "cd80825e-bcfb-4710-9be1-03bca739333f"
+          ],
+          "price": 1499,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d2e-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "BBQ Chicken",
+          "description": "Marinated grilled chicken breast coated in BBQ sauce. Topped with Mozzarella cheese, sliced red onions and fresh basil over our special sauce.",
+          "images": [
+            "26bf7fcf-7fd8-4fb0-abee-e8dec99c8adb"
+          ],
+          "price": 1599,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {
+            "Sides": {
+              "OPTION_ADD": [
+                {
+                  "name": "Greek Salad",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Italian Cobb",
+                  "value": 1099,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Caesars!",
+                  "value": 629,
+                  "is_default": 0
+                },
+                {
+                  "name": "Tuscano's Chopped Salad",
+                  "value": 949,
+                  "is_default": 0
+                },
+                {
+                  "name": "Apple Walnut Insalata",
+                  "value": 899,
+                  "is_default": 0
+                },
+                {
+                  "name": "Soup of the Day",
+                  "value": 649,
+                  "is_default": 0
+                },
+                {
+                  "name": "Zuppa di Minestrone",
+                  "value": 649,
+                  "is_default": 0
+                }
+              ]
+            }
+          },
+          "uid": "029b8d30-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Cheese Pizza!",
+          "description": "",
+          "price": 1399,
+          "section": "Brick Oven Pizzas",
+          "menu": "Lunch",
+          "option_groups": {},
+          "images": [
+            "6475adf8-1004-11e7-866a-28cfe91e4031"
+          ],
+          "uid": "029b8d32-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        }
+      ]
+    },
+    {
+      "name": "Appetizers",
+      "items": [
+        {
+          "name": "Piccante Italian Wings",
+          "description": "Guests rave about Tuscano's Wings! Tender juicy wings and drummetts. Coated in our spicy herb-infused sauce. Served with homemade Pesto Ranch dipping sauce.",
+          "images": [
+            "1b1409a1-a837-49ac-b0de-9e8cfebf01ee"
+          ],
+          "price": 1199,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d35-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Crispy Fried Raviolis",
+          "description": "Lightly breaded Raviolis filled with sausage & cheese, fried and then topped with Parmesan. Served with our homemade Marinara Sauce for dipping.",
+          "images": [
+            "329df30a-d281-4bd9-9686-0eab3f44f6d1"
+          ],
+          "price": 899,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d37-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Garlic Cheese Bread",
+          "description": "Slathered in garlic herb butter, topped with Mozzarella cheese then baked golden brown.",
+          "images": [
+            "fe5f2dab-1f01-437e-ae3d-158882074534"
+          ],
+          "price": 599,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d39-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Tomato Bruschetta",
+          "description": "Garlic herb crostinis topped with ripe diced Toma tomatoes, fresh sweet basil, estra virgin olive oil and a drizzle of honey balsamic reduction.",
+          "images": [
+            "fefd8981-cfba-4243-95ab-7dcdb8d9531a"
+          ],
+          "price": 949,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d3b-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Spinach Artichoke Dip",
+          "description": "A blend of fresh spinach and artichoke hearts in a rich creamy garlic Cheese Sauce. Baked and topped with Parmesan and breadcrumbs.",
+          "images": [
+            "1c6c9cf8-b7cf-4371-b83d-7cbdead52bf1"
+          ],
+          "price": 1049,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d3d-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Crispy Calamari",
+          "description": "Calamari rings and tentacles lightly floured and flash fried. Served with creamy Pesto Ranch dipping sauce.",
+          "images": [
+            "5609c5b8-8518-403e-aa96-a06c52309ea5"
+          ],
+          "price": 1099,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d3f-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Corn Fritters",
+          "description": "A basket of ten delicious corn fritters fried to a golden brown. Served with our sweet honey butter.",
+          "images": [
+            "bb931372-1570-4868-8eff-efca04f5cb9a"
+          ],
+          "price": 899,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d41-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Tuscano's Caprese",
+          "description": "Vine ripen tomatoes, sweet basil and fresh Mozzarella, drizzled with extra virgin olive oil and balsamic vinegar.",
+          "images": [
+            "025680b8-dca2-4469-88de-798c7d8a3aed"
+          ],
+          "price": 999,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d43-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Hand-Made Fried Mozzarella",
+          "description": "Lightly breaded Mozzarella triangles, flash fried and served with our Marinara dipping sauce.",
+          "images": [
+            "f0daf551-7eca-45fc-a773-eda01c6867aa"
+          ],
+          "price": 949,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d46-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        },
+        {
+          "name": "Butter Clams",
+          "description": "A pound of butter clams in Tuscano's Lemon Butter Sauce with fresh garlic and Italian parsley.",
+          "images": [
+            "a4c25904-0cd2-4b4a-8496-e5e32a9980c4"
+          ],
+          "price": 1299,
+          "section": "Appetizers",
+          "menu": "Lunch",
+          "option_groups": {},
+          "uid": "029b8d48-11b9-11e7-98bd-47ec529294fb",
+          "isAvailable": 1
+        }
       ]
     }
   ],
-  "items": [
-    {
-      "name": "Hummus",
-      "description": "The original Middle Eastern dip of garbanzo beans, tahini sauce and a special dressing. Served with pita bread.",
-      "images": [
-        "6d309416-8ea9-450d-a73c-000af409a58d"
-      ],
-      "tags": [
-        "Vegan",
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Samosas",
-      "description": "Two crispy pastries filled with fresh mixed vegetables or delicately spiced lean ground beef.",
-      "images": [
-        "50df3150-5b75-47f2-af3f-2ec842ffa123",
-        "bb22e4ac-0ed8-4de0-ba03-29edc53e0e0e"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Appetizers",
-          "option_groups": {
-            "Filling": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Beef",
-                  "value": 100
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Pakoras",
-      "description": "Delicately spiced fried fritters lightly battered in chickpea flour. Served with cilantro and tamarind chutneys.",
-      "images": [
-        "466224d2-40fe-4842-89d9-e508fd00c4bd"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Appetizers",
-          "option_groups": {
-            "Filling": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Paneer",
-                  "value": 200
-                },
-                {
-                  "name": "Cauliflower & Potato",
-                  "value": 200
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Paneer Tikka",
-      "description": "Tender pieces of cheese marinated with delicate spices and roasted in the Tandoor.",
-      "images": [
-        "dc8fd481-a8c1-41ff-8ee4-bb0c974cad2f"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 895,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Fish Tikka Kabob",
-      "description": "Juicy pieces of fresh cod marinated with spices and roasted in the Tandoor oven. Accompanied with our special cilantro and tamarind chutneys.",
-      "menus": {
-        "Main": {
-          "price": 895,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Cedar's Surprise",
-      "description": "A selection of Grape Leaves, Vegetable Cutlet, Vegetable Samosa, Vegetable Pakora and Spinach Pie. Served with chutney.",
-      "images": [
-        "77a38a64-171d-40fd-a18b-9503470462dd"
-      ],
-      "menus": {
-        "Main": {
-          "price": 995,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Mazza Plate",
-      "description": "Customer's favorite: Hummus, Baba Ghannoj, Flafill, Grape Leaves and Tabboleh. Served with pita bread.",
-      "images": [
-        "c2156f14-d25b-4e54-aee3-adabad621017"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1595,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Vegetarian Delight",
-      "description": "A selection of Vegetable Samosa, Vegetable Pakora, Paneer Pakora, Vegetable Cutlet and Grape leaves. Served with cilantro and tamarind chutneys.",
-      "images": [
-        "d9d51123-5e35-4585-9719-9f083f3f2f02"
-      ],
-      "tags": [
-        "Vegetarian"
-      ],
-      "menus": {
-        "Main": {
-          "price": 995,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Baba Ghannoj",
-      "description": "Eggplant smoked on an open fire, pureed and mixed with tahini sauce and our own special dressing. Served with pita bread.",
-      "tags": [
-        "Vegan",
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Tabboleh",
-      "description": "A salad made up of chopped parsley leaves, tomatoes, green onions, bulgur wheat and our own dressing.",
-      "images": [
-        "4b1982ce-1cd3-4ca0-8ff7-96072fe42567"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Vegetable Cutlets",
-      "description": "A medley of vegetables, herbs & spices formed into patties, lightly breaded and sauteÌed. Served with cilantro and tamarind chutneys.",
-      "images": [
-        "577d60e3-4812-4c90-b716-81e29ebb6f96"
-      ],
-      "tags": [
-        "Vegetarian"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Grape Leaves",
-      "description": "Vine ripened grape leaves stuffed with seasoned rice, onions and delicate spices. Served with cilantro and tamarind chutneys.",
-      "images": [
-        "210ef4fc-6094-46c8-b817-5165b8f70a8d"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Vegetarian"
-      ],
-      "menus": {
-        "Main": {
-          "price": 795,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Chicken Tikka",
-      "description": "Boneless chicken marinated in yogurt, herbs and spices. Served on a bed of lettuce with cilantro and tamarind chutneys.",
-      "images": [
-        "870764f0-456a-4fbf-9da1-02b7273fa63e"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 895,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "Bombay Tandoori Chicken Wings",
-      "description": "Spicy chicken wings roasted in the Tandoor oven. Served with tamarind and cilantro chutneys.",
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 895,
-          "section": "Appetizers"
-        }
-      },
-      "images": [
-        "babd855f-3134-458c-afd8-024c3ef2b9de"
-      ]
-    },
-    {
-      "name": "Tandoori Delight",
-      "description": "A selection of Samosa, Chicken Pakora, Chicken Tikka and Beef Kabob. Served with cilantro and tamarind chutneys.",
-      "images": [
-        "062006c9-028b-4f0c-bf3a-c3eaa3bea581"
-      ],
-      "menus": {
-        "Main": {
-          "price": 995,
-          "section": "Appetizers"
-        }
-      }
-    },
-    {
-      "name": "House Salad",
-      "description": "Our house salad consists of fresh garden greens, tomatoes, olives, carrots, bell peppers, mushrooms, and cucumbers. Served with your choice of either Mediterranean or Ranch dressing.",
-      "images": [
-        "f2a23777-21a4-44e4-b068-307ca6451987"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Soup & Salad",
-          "option_groups": {
-            "Dressing": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Mediterranean",
-                  "value": null
-                },
-                {
-                  "name": "Ranch",
-                  "value": null
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Caesar Salad",
-      "description": "Fresh romaine lettuce prepared with a classic Caesar dressing.",
-      "images": [
-        "9da31667-8c6f-40c4-a086-07ee3ec7ed2d"
-      ],
-      "menus": {
-        "Main": {
-          "price": 695,
-          "section": "Soup & Salad",
-          "option_groups": {
-            "Add Meat": {
-              "OPTION_ADD": [
-                {
-                  "name": "Chicken",
-                  "value": 200
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Dal Soup",
-      "description": "Homemade lentil soup prepared in an old Indian tradition.",
-      "images": [
-        "87266c84-ccdc-4fb8-9fd5-2108f5fc49d4"
-      ],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "Soup & Salad"
-        }
-      }
-    },
-    {
-      "name": "Mulligatawny Soup",
-      "description": "A rich chicken, lentil and rice soup flavored with Indian spices and finished with a hint of lemon.",
-      "images": [
-        "2a82968e-a2db-4bea-88a2-b685cb744be2"
-      ],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "Soup & Salad"
-        }
-      }
-    },
-    {
-      "name": "Mediterranean Salad",
-      "description": "Fresh garden salad made with lettuce, tomatoes, olives, carrots, bell peppers, mushrooms, cucumbers, feta cheese and your choice of either Mediterranean or Ranch dressing.",
-      "images": [
-        "3d3b8448-7ee9-413c-999d-cf4d9a0f1738"
-      ],
-      "menus": {
-        "Main": {
-          "price": 595,
-          "section": "Soup & Salad",
-          "option_groups": {
-            "Dressing": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Mediterranean",
-                  "value": null
-                },
-                {
-                  "name": "Ranch",
-                  "value": null
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Cucumber Mint Yogurt Salad",
-      "description": "Cucumbers mixed with yogurt, mint, olive oil and a touch of garlic.",
-      "images": [
-        "89609f4c-6f9e-4085-8963-51de3fbe9f4c"
-      ],
-      "menus": {
-        "Main": {
-          "section": "Soup & Salad",
-          "price": 595
-        }
-      }
-    },
-    {
-      "name": "Mughlai Tomato Soup",
-      "description": "A rich curried tomato soup spiced with cumin and curry leaves.",
-      "images": [
-        "7a2e5080-3a73-42df-bbe4-0f0982a119ee"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "Soup & Salad",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Roti",
-      "description": "Unleavened whole wheat bread.",
-      "tags": [
-        "Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Garlic Naan",
-      "description": "Leavened bread topped with garlic.",
-      "images": [
-        "2b024b80-c61f-4953-b3fe-a737df9d6cbd"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 275,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Plain Naan",
-      "description": "White Leavened bread.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 255,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Cedars Naan",
-      "description": "Leavened bread stuffed with chicken, almonds and herbs.",
-      "images": [
-        "2fbbfc77-13bd-4554-857c-f4d1fb0da105"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 595,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Onion Kulcha",
-      "description": "Leavened bread stuffed with fresh onions.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Paneer Naan",
-      "description": "Leavened bread stuffed with traditional Indian homemade cheese.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Spinach Naan",
-      "description": "Leavened bread stuffed with seasoned spinach.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Vegetable Naan",
-      "description": "Leavened bread stuffed with mixed vegetables and herbs.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Aloo Paratha",
-      "description": "Unleavened layered whole wheat bread stuffed with potatoes, onions and fresh spices.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Plain Paratha",
-      "description": "Unleavened layered whole wheat bread.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 395,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Pesto Naan",
-      "description": "Leavened bread stuffed with pesto.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Mint Naan (Pudina)",
-      "description": "Leavened bread stuffed with fragrant mint and spices.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Keema Naan",
-      "description": "Leavened bread stuffed with ground beef, ginger, onions and a touch of cumin.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 595,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Spinach & Paneer Naan",
-      "description": "Leavened bread stuffed with seasoned spinach and homemade Indian cheese.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Chilli Paratha",
-      "description": "Unleavened whole wheat bread layered with chopped serrano chillis and onions.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Freshly Baked Tandoori Breads",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Falafel Plate",
-      "description": "A mixture of fava beans, chickpeas, parsley and spices. Garnished with cucumbers, tomatoes and tahini sauce. Served with pita bread.",
-      "images": [
-        "b82e38c4-bfb8-4039-bb0d-c1888b478af3"
-      ],
-      "tags": [
-        "Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1095,
-          "section": "Mediterranean Cuisine",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Combination Plate",
-      "description": "Customers favorite: Hummus, Baba Ghannoj, and Falafel. Served on a bed of lettuce with pita bread.",
-      "images": [
-        "40b62efc-c015-4e32-abf5-cc50702a3cc0"
-      ],
-      "tags": [
-        "Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Mediterranean Cuisine",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Gyros Plate",
-      "description": "Strips of marinated beef sauteÌed with onions. Gyros are served on a bed of lettuce with hummus.",
-      "images": [
-        "abfd5b4d-0c25-47b3-a936-5eb5124a8bc4"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1295,
-          "section": "Mediterranean Cuisine",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Vegetarian Plate",
-      "description": "Combination of seasonal vegetables sauteÌed and mildly spiced. Served with Basmati rice, Grape leaves, Spinach pie, Falafel, and Bulgar wheat.",
-      "tags": [
-        "Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1295,
-          "section": "Mediterranean Cuisine",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Shish Taouk",
-      "description": "Chicken marinated in garlic, oregano, saffron & other Middle Eastern spices. Served on a bed of rice & fresh vegetables.",
-      "images": [
-        "c7dda4be-7733-4e63-967f-f82d13483a8a"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1495,
-          "section": "Mediterranean Cuisine",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Shish Kabob",
-      "description": "Tender fillet of lamb or beef kabobs marinated in a special sauce, skewered with onions and tomatoes. Served with rice and fresh vegetables.",
-      "images": [
-        "435d9732-99a3-4c82-ad65-89ebb9eab430"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1595,
-          "section": "Mediterranean Cuisine",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Cedars Delight",
-      "description": "Combination of Shish Kabob, Shish Taouk, Prawns & Grape leaves. Served on a bed of rice & fresh vegetables.",
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1895,
-          "section": "Mediterranean Cuisine",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Sweet Mango Chutney or Mango Pickle",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Side Orders",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Chopped Onions & Chillies",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 195,
-          "section": "Side Orders",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Papadum",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 295,
-          "section": "Side Orders",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Cucumber Mint Yogurt",
-      "description": "Cucumbers mixed with yogurt, mint, olive oil, and a touch of garlic.",
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Side Orders",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Raita",
-      "description": "A refreshing yogurt salad made with cucumbers, carrots and tomatoes.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 350,
-          "section": "Side Orders",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Indian Salad",
-      "description": "Onions, tomatoes, cucumbers, and green chillies mixed in a tangy sauce.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 350,
-          "section": "Side Orders",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Rice",
-      "description": "Basmati Rice slow cooked",
-      "images": [
-        "f8be2f3b-e687-4f8c-80f5-2ce50de150be"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 400,
-          "section": "Side Orders",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Sauteed Vegetables",
-      "description": "Lightly seasoned fresh vegetables.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Side Orders",
-          "option_groups": {
-            "Order Size": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Half Order",
-                  "value": 0
-                },
-                {
-                  "name": "Full Order",
-                  "value": 200
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Channa Masala",
-      "description": "Chickpeas cooked over a slow fire blended with spices and tomatoes.",
-      "images": [
-        "e2bdc3aa-0e7e-4394-9176-f612eee0ef41"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1095,
-          "section": "Vegetarian Specialties",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Plain",
-                  "value": 0
-                },
-                {
-                  "name": "Aloo",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Mutter Masala (Peas)",
-      "description": "Fresh green peas cooked in a golden curry sauce.",
-      "images": [
-        "5fbbb47b-bee6-42a5-b204-50216eed351d"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1095,
-          "section": "Vegetarian Specialties",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Aloo",
-                  "value": 0
-                },
-                {
-                  "name": "Mushroom",
-                  "value": 100
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Dal Maharani",
-      "description": "Creamed lentils cooked with select herbs and spices.",
-      "images": [
-        "b267af0b-27d1-4d54-8962-ac52897831f9"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Vegetarian Specialties",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Aloo Gobi",
-      "description": "Potatoes and cauliflower sauteÌed with onions and fresh herbs.",
-      "images": [
-        "7f15b347-dd72-42d2-a7bb-03db2d866b89"
-      ],
-      "tags": [
-        "Vegan",
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Vegetarian Specialties",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Baigan Bhartha (Eggplant)",
-      "description": "Eggplant baked over an open flame, mashed and seasoned with herbs, sauteÌed onions, green peas, and tomatoes.",
-      "images": [
-        "2b40a164-924d-4a56-9687-85c03f090e0e"
-      ],
-      "tags": [
-        "Vegan",
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Vegetarian Specialties",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Navratan Korma",
-      "description": "Fresh vegetables and paneer in a cashew nut cream sauce.",
-      "images": [
-        "ee6d20c8-ea39-480b-8b63-5d13500a88fe"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1295,
-          "section": "Vegetarian Specialties",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Vegetable Kofta",
-      "description": "Pureed vegetables and cheese kofta served in a butter sauce.",
-      "images": [
-        "1a1f74de-64bd-490b-aad5-a7b4436e98bc"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 1295,
-          "section": "Vegetarian Specialties",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Tandoori Chicken",
-      "description": "Juicy spring chicken marinated in flavorful, fresh ground spices. Served with sliced onions and lemons. (On the bone)",
-      "images": [
-        "6ec22fc0-f7bf-4fd2-b313-63ae135be76e",
-        "d501ee52-563f-4b01-9aba-9d2b0f8a789f"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1395,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Tandoori Chicken Tikka",
-      "description": "Succulent pieces of boneless chicken rubbed with Indian herbs and spices. Served with sliced onions and lemons.",
-      "images": [
-        "66ffb416-f2d3-4337-9d53-b65b696808cc"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1495,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Chicken Boti Kabob",
-      "description": "Tender pieces of Chicken Breast marinated with our special blend of Indian spices & yogurt.",
-      "images": [
-        "80563d0f-4cef-4bf6-b843-27462501f838"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1595,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Keema Kabob",
-      "description": "Ground beef with onions and fresh herbs.",
-      "images": [
-        "576b61e7-0a69-4508-aed9-6d4b1ae6572e"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1295,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Lamb Boti Kabob",
-      "description": "Tender pieces of lamb marinated with our special blend of Indian spices.",
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1595,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Tandoori Cod",
-      "description": "Filet of cod marinated and cooked in the Tandoor. Served with rice, vegetables, and lemon.",
-      "images": [
-        "d4ed8bf5-99b1-44e5-941f-238d813c45ec"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1495,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Tandoori Salmon",
-      "description": "Fresh king salmon cooked in our special Tandoori marinade.",
-      "images": [
-        "aef9fc29-8568-4939-aac8-0e45784a3d35"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1695,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Tandoori Prawns",
-      "description": "Jumbo prawns marinated in a special blend of spices & herbs then roasted in the Tandoor. Served with sliced onions & lemons.",
-      "images": [
-        "019e8701-dc8a-4cf9-a982-7cf9a8a4223b"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1795,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Tandoori Surprise",
-      "description": "An assortment of Tandoori specialties: Chicken, Lamb, Beef and Fish. Served with sliced onions and lemons.",
-      "images": [
-        "8d1f46d9-947d-4a23-9d08-784b3d4caea1"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1895,
-          "section": "Tandoori Cuisine",
-          "option_groups": {
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Curry Specialties",
-      "description": "A traditional brown curry prepared with tomatoes, onions and fresh herbs.",
-      "images": [
-        "ddbe775f-a802-47bd-919f-a0feefd1a5e5"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1095,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Coconut Curry",
-      "description": "Rich curry cooked with coconuts, ginger, garlic and our special blend of spices.",
-      "images": [
-        "ea937f1c-2653-4e55-85c9-1e27ecba1eee"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Mango Curry",
-      "description": "Tender pieces of meat or vegetables sauteÌed with Major Grey Mango Chutney and a touch of cream.",
-      "images": [
-        "1d95c953-d1e5-42e5-987f-b0a3c5066a45"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Jalfrazie",
-      "description": "Boneless meat or vegetables stir-fried in brown curry with bell peppers, garlic, ginger, tomatoes, and onions.",
-      "images": [
-        "98a8c27b-2348-4bdd-9867-5d2d16e7394c"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                },
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Karai Gosht",
-      "description": "Cooked in a traditional Indian wok with onions, tomatoes, fenugreek leaves, capsicums, fresh ginger, and garlic.",
-      "images": [
-        "1b6a3572-816d-4ca5-9b80-704240135cfd"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Rogan Josh",
-      "description": "This famous dish from Kashmir is cooked with tomatoes and onions then roasted with spices in a rich brown curry sauce.",
-      "images": [
-        "467fdce4-7eac-41ee-b897-1c7fc0656783"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Royal Biryani",
-      "description": "A classic Mughlai dish of Basmati rice cooked with curry, raisins, cashew nuts, and saffron. Served with Raita.",
-      "images": [
-        "7ecf3d7a-ace1-4efb-ba2e-ac5503f1ad5b"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Shahi Korma",
-      "description": "A traditional dish prepared with exotic spices, herbs and a cream based sauce with almonds.",
-      "images": [
-        "fd9ab224-8359-41e1-8265-2762b9792d4e"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Vindaloo",
-      "description": "Zesty curry cooked in a tangy sauce of wine vinegar, ginger, and potatoes.",
-      "images": [
-        "f9a3cd32-47c0-4f52-a28c-5057cd9f33c8"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                },
-                {
-                  "name": "min",
-                  "value": 0
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Butter Masala",
-      "description": " deliciously smooth butter, tomato, and cream sauce, spiced with ginger and garlic.",
-      "images": [
-        "4e9f6f5c-b608-4630-b0a8-dfdd8a5c471c"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Madras Chilli Masala",
-      "description": "This dish originates from the city of Madras. Cooked in a sauce of tomatoes, roasted dry chillies, browned garlic, cumin and other authentic Indian spices.",
-      "images": [
-        "9d90b51e-d20e-4822-b957-5f8446293250"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Palak Masala",
-      "description": "Cream of spinach simmered with onions and spices.",
-      "images": [
-        "6700a3bd-7fcc-42e7-9186-99129a549e49"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1095,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Aloo",
-                  "value": 100
-                },
-                {
-                  "name": "Paneer",
-                  "value": 200
-                },
-                {
-                  "name": "Chicken",
-                  "value": 300
-                },
-                {
-                  "name": "Beef",
-                  "value": 400
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Tikka Masala",
-      "description": "A cream based curry cooked with ginger and cilantro in a tomato sauce.",
-      "images": [
-        "30d8c186-407d-4569-b7df-d9b51850eaa8"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1195,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Vegetable",
-                  "value": 0
-                },
-                {
-                  "name": "Paneer",
-                  "value": 100
-                },
-                {
-                  "name": "Chicken",
-                  "value": 200
-                },
-                {
-                  "name": "Beef",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Okra Masala",
-      "description": "Okra cooked with sauteÌed onion, tomatoes, special herbs and spices.",
-      "images": [
-        "6caff444-b551-45a3-a87c-d722dd8ae4b0"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 1095,
-          "section": "Indian Cuisine",
-          "option_groups": {
-            "Options": {
-              "OPTION_CHOOSE": [
-                {
-                  "name": "Plain",
-                  "value": 0
-                },
-                {
-                  "name": "Chicken",
-                  "value": 300
-                }
-              ]
-            },
-            "Spice Level": {
-              "OPTION_RANGE": [
-                {
-                  "name": "min",
-                  "value": 0
-                },
-                {
-                  "name": "max",
-                  "value": 5
-                },
-                {
-                  "name": "step",
-                  "value": 1
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Marble Nut Halvah",
-      "description": "A Middle Eastern delicacy made with sesame, Swiss Chocolate, roasted nuts, and honey.",
-      "images": [
-        "73ec05f1-22a0-4d86-99f4-119a90899286"
-      ],
-      "tags": [
-        "Gluten Free",
-        "Can be made Vegan"
-      ],
-      "menus": {
-        "Main": {
-          "price": 295,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Baklava",
-      "description": "A delicious Middle Eastern pastry, made of nuts baked between layers of thin dough and steeped in syrup that has been flavored with exotic juices.",
-      "images": [
-        "f0e8065b-0da5-453d-91bb-64ed5a1a15d3"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 395,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Gulab Jamun",
-      "description": "An Indian delicacy made from milk dough fried until golden brown, and served in a honey and saffron syrup.",
-      "images": [
-        "891e898a-4833-41eb-a36d-d090db9f045c"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Kheer",
-      "description": "Traditional Indian rice pudding cooked with nuts and cardamom.",
-      "images": [
-        "db3802fd-a4a3-4c3c-a47f-a9add43caeda"
-      ],
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Kulfi",
-      "description": "Traditional Indian ice cream made of condensed milk, fresh cream, almonds, and cardamon.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Coconut Almond Ice Cream",
-      "description": "Specially prepared ice cream. Local from Snoqualimie creamery,",
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Mango Pistachio Ice Cream",
-      "description": "Specially prepared ice cream. Local from Snoqualimie creamery,",
-      "tags": [
-        "Gluten Free"
-      ],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Original Baked New York Cheesecake",
-      "description": "The name says it all! Served with mango sauce.",
-      "images": [
-        "9df69901-9208-4e4e-a8d8-caaaace1704c"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Rasmalai",
-      "description": "Delicate homemade cheese patties served in an almond sweetened milk and cardamom sauce.",
-      "images": [
-        "4127f1c2-4a0b-44e9-b272-0074a5ef3f80"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 495,
-          "section": "Desserts",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Chai (Unlimited Refills)",
-      "description": "An ancient tea of India, made up of milk, cardamom, cloves, fennel, and sugar.",
-      "images": [
-        "73954770-f49f-4d06-a9ed-f75af79a5ce6",
-        "a3220590-c3e1-48cb-8156-aaa5668c07f5"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 295,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Mango Lemonade",
-      "description": "Traditional lemonade with a twist of mango.",
-      "images": [
-        "834a93a8-87c9-45de-93ae-21cfb8b99f51"
-      ],
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 300,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Plain Lassi",
-      "description": "Traditional Indian drink made with homemade yogurt, milk, and rosewater.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 395,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Mango Lassi",
-      "description": "Traditional Indian drink made with mango, homemade yogurt, and milk.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 395,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Mango Shake",
-      "description": "Vanilla Bean ice cream blended with mango and milk.",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 450,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Soda",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Assorted Teas",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Iced Tea",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Lemonade",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Coffee",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Bottled Water",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Lebanese Coffee",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Sparkling Water",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Mango Juice",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 250,
-          "section": "Drinks",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Chateau Ste. Michelle Riesling",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 1900,
-          "section": "White Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Sebastiani Chardonnay",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2200,
-          "section": "White Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Columbia Pinot Gris",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2500,
-          "section": "White Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Clos De Bois Chardonnay",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2600,
-          "section": "White Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "St. Supery Blanc Sauvignon",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2800,
-          "section": "White Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Ferrari Carano Chardonnay",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 3000,
-          "section": "White Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Hogue Pinot Grigio",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2800,
-          "section": "White Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Blackstone Merlot",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2200,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Forest Glen Cabernet Sauvignon",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2300,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "California Shiraz",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2500,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Gabbiano Chianti",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2700,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Mondavi P.S. Pinot Nior",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2700,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Chateau Ste. Michelle Merlot",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2800,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Peachy Canyon Incredible Zinfandel",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 2800,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Kendall-Jackson Merlot",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 3000,
-          "section": "Red Wines (by the bottle)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "House White",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 500,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "House Red",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 500,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "White Zinfandel",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 500,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Red Zinfandel",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 500,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Columbia Crest Two Vines Merlot",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Columbia Crest Chardonnay",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Hogue Cabernet-Merlot",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Hogue Pinot Grigio",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Chateau Ste. Michelle Riesling",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Fetzer Sundial Chardonnay",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "California Shiraz",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    },
-    {
-      "name": "Tisdale Shiraz",
-      "description": "",
-      "tags": [],
-      "menus": {
-        "Main": {
-          "price": 550,
-          "section": "House Wines (by the glass)",
-          "option_groups": {}
-        }
-      }
-    }
-  ]
-};
+  "uid": "41083b90-11b9-11e7-bdfa-8557e1cb7530"
+}
 
 @Injectable()
 export class Menu {
-  private menu: any;
+  public menu: any;
 
   constructor() {
     this.menu = menu;
-  }
-
-  public getSections() {
-    return this.menu['menus'][0]['sections'];
-  }
-
-  public getItems() {
-    return this.menu['items'];
   }
 
 }

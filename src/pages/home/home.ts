@@ -15,8 +15,7 @@ export class HomePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.dir(this.menu.getSections());
-    console.dir(this.menu.getItems())
+    console.dir(this.menu.menu);
   }
 
 }
